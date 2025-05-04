@@ -1,2 +1,5 @@
 *.pickle
+*.pth
 logs/
+runs/
+reconstructions/
