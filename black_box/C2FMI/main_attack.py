@@ -45,7 +45,6 @@ def inversion_attack(generator, target_model, embed_model, p2f, target_label, la
 
     for i in pbar:
         _disturb  = 0.0
-        mut_stren = 0.5
 
         latent_n = disturb_latent(latent_in, _disturb)
         imgs_gen, _ = generator([latent_n], input_is_latent=input_is_latent)
@@ -138,13 +137,13 @@ if __name__ == '__main__':
 
     input_latent  = True
     init_lr       = 0.02
-    init_label    = 91
-    fina_label    = 92
+    init_label    = 95
+    fina_label    = 97
     step          = 20
     face_shape    = [160, 160]
     batch         = 16  # or 8
     load_init     = False
-    top_x         = 526
+    top_x         = 100
 
     #---------------------------------------------------
     # load models

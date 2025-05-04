@@ -15,9 +15,10 @@ t_model_bone  = 'mobile_net'  # backbone of target model
 eva_backbone  = 'mobile_facenet'  # backbone of evaluation model
 facenet_path  = 'trained_models/FaceScrub-BackboneMobileFaceNet-Epoch4-Train_Acc0.992-Val_Acc0.971.pth'  # path to evaluation model
 num_classes   = 526  # total classes
-img_dir       = 'figures/top100' # image directory
+img_dir       = 'gen_figures/DE_facescrub' # image directory
 face_shape    = [160, 160]
-all_id        = 3  # classes need to be evaluated, set it <= num_classes
+all_id        = 2  # classes need to be evaluated, set it <= num_classes
+label_list    = [95, 96]  # list of labels to evaluate, must be size of all_id
 detector      = dlib.get_frontal_face_detector()
 
 # load evaluation model
@@ -29,7 +30,7 @@ test_model.eval()
 acc_number = 0
 top5_acc_number = 0
 conf_sum   = 0
-for label in tqdm([91, 95, 96]):
+for label in tqdm(label_list):
     label_ = label
     img_path      = f'{img_dir}/de_label{label_}_best.jpg'  # image path
     img = Image.open(img_path)
