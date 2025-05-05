@@ -11,7 +11,22 @@ For documentation, check the `README.md` files in the subfolders:
 
 The `black_box/label_only_old`, `white_box/emnist_gradient_old` and `white_box/mnist_gradient_old` directories are only present for the sake of completeness.
 
-The compiled documentation from the linked `README.md` files is below.
+### Related papers:
+
+- Z. Ye, W. Luo, M. L. Naseem, X. Yang, Y. Shi and Y. Jia, "C2FMI: Corse-to-Fine Black-Box Model Inversion Attack," in IEEE Transactions on Dependable and Secure Computing, vol. 21, no. 3, pp. 1437-1450, May-June 2024, doi: 10.1109/TDSC.2023.3285071. https://ieeexplore.ieee.org/document/10148574
+- T. Zhu, D. Ye, S. Zhou, B. Liu and W. Zhou, "Label-Only Model Inversion Attacks: Attack With the Least Information," in IEEE Transactions on Information Forensics and Security, vol. 18, pp. 991-1005, 2023, doi: 10.1109/TIFS.2022.3233190. https://ieeexplore.ieee.org/document/10003239
+- LeCun, Y., Cortes, C., & Burges, C. J. C. (1998). The MNIST database of handwritten digits. http://yann.lecun.com/exdb/mnist/
+- H. -W. Ng and S. Winkler, "A data-driven approach to cleaning large face datasets," 2014 IEEE International Conference on Image Processing (ICIP), Paris, France, 2014, pp. 343-347, doi: 10.1109/ICIP.2014.7025068. https://ieeexplore.ieee.org/document/7025068
+- Matt Fredrikson, Somesh Jha, and Thomas Ristenpart. 2015. Model Inversion Attacks that Exploit Confidence Information and Basic Countermeasures. In Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security (CCS '15). Association for Computing Machinery, New York, NY, USA, 1322–1333. https://doi.org/10.1145/2810103.2813677
+- Zhu et al. (2019). Deep Leakage from Gradients. https://arxiv.org/abs/1906.08935
+- Cohen, G., Afshar, S., Tapson, J., & van Schaik, A. (2017). EMNIST: An extension of MNIST to handwritten letters. *arXiv preprint arXiv:1702.05373*. https://arxiv.org/abs/1702.05373
+- Mahendran, A., & Vedaldi, A. (2015). Understanding deep image representations by inverting them. *CVPR 2015*. https://arxiv.org/abs/1412.0035
+- Johnson, J., Alahi, A., & Fei-Fei, L. (2016). Perceptual losses for real-time style transfer and super-resolution. *ECCV 2016*. https://arxiv.org/abs/1603.08155
+- Paszke, A., et al. (2019). PyTorch: An Imperative Style, High-Performance Deep Learning Library. *Advances in Neural Information Processing Systems 32*. https://arxiv.org/abs/1912.01703
+- Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. *Computing in Science & Engineering*, 9(3), 90-95. https://ieeexplore.ieee.org/document/4160265
+- Han, Gyojin & Choi, Jaehyun & Lee, Haeil & Kim, Junmo. (2023). Reinforcement Learning-Based Black-Box Model Inversion Attacks. 10.48550/arXiv.2304.04625. https://www.researchgate.net/publication/369924568_Reinforcement_Learning-Based_Black-Box_Model_Inversion_Attacks
+
+**The compiled documentation from the linked `README.md` files is below.**
 
 ---
 
@@ -21,7 +36,8 @@ The compiled documentation from the linked `README.md` files is below.
 
 The code in `/black_box/C2FMI` is based on the paper *"Z. Ye, W, Luo and M. L. Naseem, et al., C2FMI: Corse-to-Fine Black-box Model Inversion Attack", TDSC, 2023.*
 
-The code is modified and adapted on the repository [2022YeC2FMI](https://github.com/MiLabHITSZ/2022YeC2FMI). That repository did not implement the option to only use the top-x prediction scores for the attack, althrough the paper did mention that they experimented with it and also showed figures of it. This version implements that feature too.
+The code is modified and adapted on the repository [2022YeC2FMI](https://github.com/MiLabHITSZ/2022YeC2FMI). That repository did not implement the option to only use the top-x prediction scores for the attack, althrough the paper did mention that they experimented with it and also showed figures of it. This version implements that feature too. For evaluation (and for the pretrained target model) the [FaceScrub](https://www.kaggle.com/datasets/rajnishe/facescrub-full) dataset was used.
+
 
 
 ## Results
