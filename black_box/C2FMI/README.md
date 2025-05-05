@@ -86,7 +86,8 @@ Tested on:
 1. download `checkpoint2.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
 2. download `trained_models.zip` from <https://huggingface.co/MiLab-HITSZ/C2FMI/tree/main>.
 3. unzip and put these 2 folders in your project directory.
-4. running with command:
+4. install the required libraries using `requirements.txt`.
+5. run with this command:
 > python main_attack.py
 
 - note that you should create directory `gen_figures/DE_facescrub/` in your project before running since our code does not automatically generate it.
