@@ -138,6 +138,7 @@ The `emnist_final.ipynb` notebook implements a white-box gradient-based attack w
 ## References
 
 ### Papers
+- Zhu et al. (2019). Deep Leakage from Gradients. [arXiv:1906.08935](https://arxiv.org/abs/1906.08935)
 - Cohen, G., Afshar, S., Tapson, J., & van Schaik, A. (2017). EMNIST: An extension of MNIST to handwritten letters. *arXiv preprint arXiv:1702.05373*. https://arxiv.org/abs/1702.05373
 - Mahendran, A., & Vedaldi, A. (2015). Understanding deep image representations by inverting them. *CVPR 2015*. https://arxiv.org/abs/1412.0035
 - Johnson, J., Alahi, A., & Fei-Fei, L. (2016). Perceptual losses for real-time style transfer and super-resolution. *ECCV 2016*. https://arxiv.org/abs/1603.08155
