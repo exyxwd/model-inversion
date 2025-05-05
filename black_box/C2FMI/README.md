@@ -2,7 +2,7 @@
 
 This code is based on the paper *"Z. Ye, W, Luo and M. L. Naseem, et al., C2FMI: Corse-to-Fine Black-box Model Inversion Attack", TDSC, 2023.*
 
-This code is modified and adapted on the repository [2022YeC2FMI](https://github.com/MiLabHITSZ/2022YeC2FMI). That repository did not implement the option to only use the top-x prediction scores for the attack, althrough the paper did mention that they experimented with it and also showed figures of it. This code implements that feature too.
+This code is modified and adapted on the repository [2022YeC2FMI](https://github.com/MiLabHITSZ/2022YeC2FMI). That repository did not implement the option to only use the top-x prediction scores for the attack, althrough the paper did mention that they experimented with it and also showed figures of it. This code implements that feature too. For evaluation (and for the pretrained target model) the [FaceScrub](https://www.kaggle.com/datasets/rajnishe/facescrub-full) dataset was used.
 
 
 # Results
